@@ -1,0 +1,60 @@
+name: app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  drift: ^2.34.3
+  drift_flutter: ^0.3.1
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  flutter_slidable: ^4.0.3
+  intl: ^0.20.3
+  path_provider: ^2.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.34.5
+  build_runner: ^2.15.1
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.4
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#7E4BFC"
+  adaptive_icon_foreground: "assets/images/icon.png"
+
+# Splash nativo (recomendado). Fondo del design system (blanco / oscuro), logo
+# centrado y, abajo, la firma "con el respaldo de Vite" como imagen de branding
+# (Android 12+ no permite texto estilizado nativo, solo ícono + branding).
+# Regenerar con: dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#FFFFFF"
+  color_dark: "#15141F"
+  image: assets/images/icon.png
+  image_dark: assets/images/icon.png
+  branding: assets/images/branding.png
+  branding_dark: assets/images/branding_dark.png
+  android_12:
+    image: assets/images/icon.png
+    image_dark: assets/images/icon.png
+    icon_background_color: "#FFFFFF"
+    icon_background_color_dark: "#15141F"
+    branding: assets/images/branding.png
+    branding_dark: assets/images/branding_dark.png
+  android: true
+  ios: true
+  web: false
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

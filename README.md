@@ -1,1 +1,3 @@
-# LupiSave
+# app
+
+A new Flutter project.
